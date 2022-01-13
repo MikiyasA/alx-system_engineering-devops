@@ -1,0 +1,1 @@
+This is a *project* for **ALX SE course** named as *0x01. shell, permission*.

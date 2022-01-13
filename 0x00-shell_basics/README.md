@@ -1,0 +1,1 @@
+Readme file for project **0x00. shell basics** on *0x00.-shell_basics* directory. 

@@ -1,0 +1,1 @@
+Readme file for bash project 0x04. Loops, conditions and parsing

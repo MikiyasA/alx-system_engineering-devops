@@ -1,0 +1,1 @@
+At the end of this project, you are expected to be able to explain *about I/O Redirections and filters* to anyone, **without the help of Google**
