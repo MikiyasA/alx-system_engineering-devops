@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that display a list of current runing process
 
-ps aux
+ps -aux --forest

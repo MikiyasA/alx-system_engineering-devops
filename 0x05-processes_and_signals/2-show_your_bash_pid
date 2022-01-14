@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that display a list of current runing process
 # shellcheck disable=SC2009
-ps aux --forest | pgrep bash
+ps aux --forest | grep bash
