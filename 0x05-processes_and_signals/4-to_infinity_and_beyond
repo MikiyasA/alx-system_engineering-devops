@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash scrip to displas To infinity and beyond indefinatly
+
+while :
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
