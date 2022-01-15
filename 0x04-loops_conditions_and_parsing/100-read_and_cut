@@ -4,7 +4,8 @@
 #     User ID
 #     Home directory path for user
 
-while IFS=: read -r f1 f2 f3 f4 f5 f6 f7
+# shellcheck disable=SC2043
+while IFS=: read -r f
 do
-    echo $f1:$f3:$f6
+    echo "$f" | cut -f 1,2,6 -d ':'
 done < /etc/passwd
