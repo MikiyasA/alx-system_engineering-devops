@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Bash scrip that displays the visitor IP along with the HTTP status code from the Apache log file
 
-awk -F\" '{print $10}' apache-access | sort | uniq -c | sort -fr
-awk -F\" '{print $1}' apache-access
-awk -F\" '{print $9}' apache-access
+awk -F' ' '{ print $10 " " $1 " " $9 }' apache-access.log | sort | uniq -c | sort -nr
