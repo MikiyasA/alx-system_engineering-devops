@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# Bash script that manages manage_my_process (start, stop, restart)
+. /lib/lsb/init-functions
+
+PFILE=/var/run/my_process.pid
+
+start(){
+    ./manage_my_process &
+    echo "$!" > $PFILE
+}
+
+stop(){
+    sudo kill -15 "$(cat "$PFILE")" && rm -f $PFILE
+}
+
+case "$1" in
+    start)
+	start
+	echo "manage_my_process started"
+	;;
+    stop)
+	stop
+	echo "manage_my_process stopped"
+	;;
+    restart)
+	stop
+	start
+	echo "manage_my_process restarted"
+	;;
+    *)
+	echo "Usage: manage_my_process {start|stop|restart}"
+	;;
+esac
