@@ -2,5 +2,5 @@
 # to setup Nginx to be running, and listening on port 80 of all the server active IPv4 IPsserver
 sudo sed -i 's/listen \[::\]:8080 default_server ipv6only=on/listen \[::\]:80 default_server/' /etc/nginx/sites-enabled/default
 sudo sed -i 's/listen 8080 default_server/listen 80 default_server/' /etc/nginx/sites-enabled/default
-sudo sed -i 's-ipv6only=on- -' /etc/nginx/sites-enabled/default
+sudo sed -i 's- ipv6only=on--' /etc/nginx/sites-enabled/default
 service nginx restart
