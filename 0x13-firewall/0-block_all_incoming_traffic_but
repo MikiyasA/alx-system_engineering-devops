@@ -1,0 +1,5 @@
+sudo apt-get update
+sudo apt-get install ufw
+sudo ufw allow 22/tcp #can be allow ssh
+sudo ufw allow 80/tcp #can be allow http
+sudo ufw allow 443/tcp #can be allow https
