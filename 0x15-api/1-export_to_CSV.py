@@ -4,9 +4,9 @@ Using what you did in the task #0, extend your Python
 script to export data in the CSV format.
 url: https://jsonplaceholder.typicode.com/
 """
-import sys
-import requests
 import csv
+import requests
+import sys
 
 
 if __name__ == "__main__":
